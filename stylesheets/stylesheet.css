@@ -484,9 +484,11 @@ header h2 {
 }
 
 .menu {
-    position: absolute;
-    width: 940px;
-    margin-left: 25%;
+    position: relative;
+    width: 540px;
+    margin: auto;
+    padding-right: 420px;
+    top: 20px;
 }
 
 #content-wrapper {
@@ -841,6 +843,10 @@ footer a:hover {
 @media only screen and (max-width: 767px) {
   .inner {
     width: 93%;
+  }
+
+  .menu {
+      width: 93%;
   }
   header {
     padding: 20px 0;
