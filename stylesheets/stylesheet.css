@@ -448,7 +448,7 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
@@ -481,6 +481,12 @@ header h2 {
   position: relative;
   width: 940px;
   margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    width: 940px;
+    margin-left: 25%;
 }
 
 #content-wrapper {
@@ -535,6 +541,33 @@ header a.button {
   top: 0;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+aside a.button {
+  display: block;
+  width: 138px;
+  padding-left: 64px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+}
+
+a.menubutton {
+  width: 134px;
+  height: 28px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 22px;
+  line-height: 0;
+  color: #fff;
+}
+
+header a.menubutton {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: transparent;
 }
 aside a.button {
   display: block;
@@ -770,8 +803,7 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
-/* #Media Queries
-================================================== */
+/* #Media Queries================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) { }
@@ -843,6 +875,27 @@ footer a:hover {
     -webkit-border-radius: 5px;
   }
   header a.button small {
+    display: inline;
+    font-size: 13px;
+  }
+  header a.menubutton {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1;
+    color: #2879d0;
+    text-align: center;
+    background-color: #9ddcff;
+    background-image: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  header a.menubutton small {
     display: inline;
     font-size: 13px;
   }
